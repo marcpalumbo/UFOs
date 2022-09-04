@@ -19,7 +19,7 @@ function buildTable(data) {
         }
     );
 });
-};
+}
 function handleClick(){
     //grab the datetime from the filter
         let date = d3.select("#datetime").property("value");
@@ -33,9 +33,10 @@ if (date){
 //if no date is entered, filtered table will be be original tableData
 
 buildTable(filteredData);
+};
 // attach an event to listen for a button click on the filters for the table
 
-d3. selectAll("#filter-btn").on("click",handleClick);
+d3.selectAll("#filter-btn").on("click",handleClick);
 // build table when the page loads
 buildTable(tableData);
-};
+
